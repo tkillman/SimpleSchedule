@@ -9,14 +9,15 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
 <fmt:requestEncoding value="UTF-8"/>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <%--------------------------------------------------------------------------------------------- --%>
 <%-- DateSource Setting                                                                      	--%>
 <%--------------------------------------------------------------------------------------------- --%>
 <sql:setDataSource
    var="dataSource"
     driver="oracle.jdbc.driver.OracleDriver"    
-    url="jdbc:oracle:thin:@192.168.0.12:1521:XE"
+    url="jdbc:oracle:thin:@175.214.88.140:1521:XE"
     user="dd"
     password="1234"/> 
 
@@ -133,3 +134,4 @@
 <SCRIPT LANGUAGE="JavaScript">
 	document.theForm.submit();
 </SCRIPT>
+</html>

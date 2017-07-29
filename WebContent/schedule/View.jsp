@@ -8,7 +8,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <%--
 	Request객체로부터 전달받은 값들을 인코딩할때 사용
 	request.setCharacterEncoding("UTF-8"); 코드와 동일
@@ -21,7 +22,7 @@
 <sql:setDataSource
     var="dataSource"
     driver="oracle.jdbc.driver.OracleDriver"    
-    url="jdbc:oracle:thin:@192.168.0.12:1521:XE"
+    url="jdbc:oracle:thin:@175.214.88.140:XE"
     user="dd"
     password="1234"/> 
 
@@ -126,3 +127,4 @@ System.out.println("firstDayOfNextMonth:"+String.format("%1$tF %1$tT", calendar.
 <SCRIPT LANGUAGE="JavaScript">
 	document.theForm.submit();
 </SCRIPT>
+</html>
